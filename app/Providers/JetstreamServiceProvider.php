@@ -63,5 +63,11 @@ class JetstreamServiceProvider extends ServiceProvider
             'create',
             'update',
         ])->description('Editor users have the ability to read, create, and update.');
+
+        Jetstream::role('tecnico', 'Técnico', [
+            'read',
+            'create',
+            'update',
+        ])->description('Técnico users have the ability to read, create, and update.');
     }
 }
